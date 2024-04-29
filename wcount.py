@@ -40,6 +40,6 @@ if __name__ == "__main__":
     )
     ALL_UNIQUE_WORDS_COUNT: int = len(ALL_UNIQUE_WORDS)
 
-    for word, count in ALL_UNIQUE_WORDS[-100:]:
+    for word, count in ALL_UNIQUE_WORDS[:100]:  # print top 100 word
         print(f"{word:<20} => {count}")
     print(f"\n==> {ALL_UNIQUE_WORDS_COUNT=}")
